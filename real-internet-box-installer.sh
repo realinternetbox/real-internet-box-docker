@@ -2,17 +2,17 @@ echo "Welcome to Real Box Internet Installer"
 
 # Install Docker and Docker Compose on Ubuntu Linux Server
 # Install git
-sudo apt-get install git
+sudo apt-get -y install git
 echo "Git Installed"
 
 
 # Install R
-#sudo apt-get install r-base
-#sudo apt-get install littler
+#sudo apt-get -y install r-base
+#sudo apt-get -y install littler
 
 sudo apt-get update
 echo "Linux updated"
-#sudo apt-get install r-base r-base-dev
+#sudo apt-get -y install r-base r-base-dev
 
 #The best way to install packages is to use the up-to-date packages from RutteR PPA. 
 
@@ -46,13 +46,13 @@ sudo apt-cache policy docker-engine
 
 sudo sudo apt-get update
 
-sudo sudo apt-get install linux-image-generic-lts-trusty
+sudo sudo apt-get -y install linux-image-generic-lts-trusty
 
 #sudo reboot
 
 #sudo apt-get update
 
-sudo apt-get install docker-engine
+sudo apt-get -y install docker-engine
 
 sudo docker run hello-world
 
